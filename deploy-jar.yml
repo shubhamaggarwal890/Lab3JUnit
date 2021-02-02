@@ -9,6 +9,6 @@
         state: present
     - name: Copy jar file to home directory
       copy:
-        src: ./target/*.jar
+        src: ./target/Lab3Junit-1.0-SNAPSHOT.jar
         dest: ~/
         mode: '0755'
