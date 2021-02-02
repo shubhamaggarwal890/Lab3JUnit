@@ -1,0 +1,14 @@
+---
+- name: Deploy a jar file
+  hosts: all
+  remote_user: root
+  tasks:
+    - name: Installing java8 package
+      apt:
+        name: openjdk-8-jdk
+        state: present
+    - name: Copy jar file to home directory
+      copy:
+        src: ./target/*.jar
+        dest: ~/
+        mode: '0755'

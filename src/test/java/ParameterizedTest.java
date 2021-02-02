@@ -12,17 +12,17 @@ public class ParameterizedTest {
 
     // fields used together with @Parameter must be public
     @Parameter(0)
-    public int a;
+    public int a; // 1
 
     @Parameter(1)
-    public int b;
+    public int b; // 2
 
     @Parameter(2)
-    public int result;
+    public int result; // 2
 
     @Parameters
     public static Collection<Object[]> data(){
-        Object[][] data = new Object[][] {{1,2,2}, {2,5,10}};
+        Object[][] data = new Object[][] {{1,2,2}, {2,5,10}, {0, 10, 0}};
         return Arrays.asList(data);
     }
 

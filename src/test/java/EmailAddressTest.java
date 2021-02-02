@@ -23,6 +23,13 @@ public class EmailAddressTest {
     }
 
     @Test
+    public void truePositiveValidEmailAddress() {
+        EmailAddress address = new EmailAddress();
+        assertEquals(address.verifyEmailAddress("shubham@iiitb.org"), true);
+
+    }
+
+    @Test
     public void trueNegativeEmailAddressVerifyWithNoSignature() {
         EmailAddress address = new EmailAddress();
         System.out.println("Testing for shubham#iiitb.com");
