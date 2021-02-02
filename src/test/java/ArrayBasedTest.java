@@ -30,7 +30,8 @@ public class ArrayBasedTest {
             assertEquals("/ by zero", exception.getMessage());
         }catch (IndexOutOfBoundsException exception) {
             assertEquals("Index: 2, Size: 0", exception.getMessage());
-
+        }catch (NullPointerException exception){
+            assertNull(exception.getMessage());
         }
     }
 }
