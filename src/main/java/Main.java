@@ -7,5 +7,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         scanner.nextInt();
         System.out.println("So do that, why bother this code ¯\\_(ツ)_/¯");
+
     }
 }
